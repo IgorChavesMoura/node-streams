@@ -1,0 +1,22 @@
+{
+  "name": "@IgorChavesMoura/streams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start-server": "node api/webapi.js",
+    "api1": "curl localhost:3000 | tee logs/api1.log",
+    "api2": "curl localhost:4000 | tee logs/api2.log",
+    "example01": "node examples/concat-streams-pass-trough.js | tee logs/concat-streams-pass-trough.log",
+    "example01:async": "node examples/concat-streams-async-iterators.js | tee logs/concat-streams-async-iterators.log",
+    "example02": "node examples/async-streams.js | tee logs/async-streams.log",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
